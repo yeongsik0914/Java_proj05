@@ -12,6 +12,8 @@ public class Ex01 {
 		// 기본자료형 : ==
 		// 참조자료형 : aName.equals(bName)
 		
+		// 기본 자료형 값 비교 : == (Stack 영역의 값 비교)
+		// 참조 자료형 값 비교 : aName.equals (bName) (Heap 영역의 값 비교) 
 		int a;
 		int b;
 		
