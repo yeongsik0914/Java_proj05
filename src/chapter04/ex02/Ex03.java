@@ -23,22 +23,21 @@ public class Ex03 {
 		switch (month) {
 		case 1 : case 3 : case 5 : case 7 : case 8 : case 10 : case 12 :
 			day = 31;
-			System.out.printf("%S월은 %d일 입니다.", month, day);	
 			break;
 		
 		case 2 :
 			day = 28;
-			System.out.printf("%S월은 %d일 입니다.", month, day);
-			break;
+			break; 
 			
 		case 4 : case 6 : case 9 : case 11 :
-			System.out.printf("%S월은 %d일 입니다.", month, day);
 			break;
 			
 		default :
 			System.out.println("제대로 월을 입력해주세요.");
 			break;
 		}
+		
+		System.out.printf("%S월은 %d일 입니다.", month, day);	
 		
 		sc.close();
 		
