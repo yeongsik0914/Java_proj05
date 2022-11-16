@@ -8,9 +8,12 @@ public class Ex01 {
 	public static void main(String[] args) {
 		// <문제> : 오늘까지 : << 12시 까지 >>		
 		Scanner sc = new Scanner(System.in);
-		int select;
-		
 		do {
+			int select;
+			int[] arr;
+			int arr_idx; // 배열의 길이 
+			int idx = 0; // 인덱스 번호
+			
 			System.out.println("===============================");
 			System.out.println("1. 인풋 값을 받아서 방의 크기를 지정하고 7의 배수와 8의 배수 저장후 출력");
 			System.out.println("2. 인풋 값을 받아서 방의 크기를 지정하고"
@@ -24,12 +27,10 @@ public class Ex01 {
 			select = sc.nextInt();
 			
 			if(select==1) {
-				int arr_idx; // 배열의 길이 
-				int idx = 0; // 인덱스 번호
 				System.out.println("배열의 크기를 입력해주세요. >>");
 				arr_idx = sc.nextInt();
-				int[] arr = new int[arr_idx];
-				for(int i=7; i<10000; i++) {
+				arr = new int[arr_idx];
+				for(int i=7; ;i++) {
 					if(idx == arr.length) {
 						break;
 					}
@@ -43,12 +44,10 @@ public class Ex01 {
 				System.out.println(Arrays.toString(arr));
 				
 			} else if(select==2) {
-				int arr_idx; // 배열의 길이 
-				int idx = 0; // 인덱스 번호
 				System.out.println("배열의 크기를 입력해주세요. >>");
 				arr_idx = sc.nextInt();
-				int[] arr = new int[arr_idx];
-				for(int i=0; i<10000; i++) {
+				arr = new int[arr_idx];
+				for(int i=0; ; i++) {
 					if(idx == arr.length) {
 						break;
 					}
@@ -62,12 +61,10 @@ public class Ex01 {
 				System.out.println(Arrays.toString(arr));
 				
 			} else if(select==3) {
-				int arr_idx; // 배열의 길이 
-				int idx = 0; // 인덱스 번호
 				System.out.println("배열의 크기를 입력해주세요. >>");
 				arr_idx = sc.nextInt();
-				int[] arr = new int[arr_idx];
-				for(int i=0; i<10000; i+=3) {
+				arr = new int[arr_idx];
+				for(int i=3; ; i+=3) {
 					if(idx == arr.length) {
 						break;
 					}
