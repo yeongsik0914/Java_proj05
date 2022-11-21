@@ -33,7 +33,7 @@ class Student {
 		System.out.println("이름 : " + stuName);
 		System.out.println("학번 : " + stuNum);
 		System.out.println("주소 : " + stuAddr);
-		System.out.println("전화번호 : " + stuphone);
+		System.out.println("전화번호 : " +stuphone);
 		System.out.println("몸무게: " + weight);
 	} 
 }
