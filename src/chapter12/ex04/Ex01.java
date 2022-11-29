@@ -110,7 +110,7 @@ public class Ex01 {
 				Animal1 aa1 = (Animal1) arr[i];
 				aa1.cry();
 				Animal2 aa2 = (Animal2) arr[i];
-				aa2.run();
+				aa2.run(); 
 			}
 			
 			if(arr[i] instanceof Dog || arr[i] instanceof Lion) {
